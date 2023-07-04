@@ -12798,6 +12798,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-size: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .nav-brand span {
   font-size: 19.13px;
   font-family: Poppins;
@@ -12871,9 +12879,27 @@ textarea.form-control-lg {
   line-height: normal;
 }
 
-#aboutMusic {
+#aboutMusic, #singers {
   padding-top: 130px;
+}
+
+#aboutMusic .about-img, #singers .about-img {
+  border-radius: 24px;
+  width: 460px;
+  height: 480px;
+}
+
+#aboutMusic {
   padding-bottom: 130px;
+}
+
+#aboutMusic .about-img {
+  top: 70px;
+  left: 70px;
+}
+
+#eventSchedule, #pricing {
+  padding-top: 160px;
 }
 
 #navbar {
@@ -12882,6 +12908,151 @@ textarea.form-control-lg {
 
 .scrolled {
   background-color: rgba(5, 6, 8, 0.9333333333);
+}
+
+.card-artist {
+  border-radius: 24px;
+  max-width: 90%;
+  max-height: 90%;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.8);
+  background-size: cover !important;
+}
+
+.card-artist::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  position: absolute;
+  top: 50;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: inherit;
+  filter: blur(20px);
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: 500ms all ease-in-out 0ms;
+}
+
+.card-artist:hover::after {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.card-artist:nth-of-type(1) {
+  background: url("/public/assets/images/artist_1.png");
+  width: 370px;
+  height: 270px;
+}
+
+.card-artist:nth-of-type(2) {
+  background: url("/public/assets/images/artist_2.png");
+  width: 270px;
+  height: 300px;
+}
+
+.card-artist:nth-of-type(3) {
+  background: url("/public/assets/images/artist_3.png");
+  width: 270px;
+  height: 300px;
+}
+
+.card-artist:nth-of-type(4) {
+  background: url("/public/assets/images/artist_4.png");
+  width: 370px;
+  height: 270px;
+}
+
+h2, .h2 {
+  font-size: 34px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.navtabs {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.tab-day-active, .tab-day {
+  border-bottom: 4px solid #222;
+}
+
+.tab-day {
+  border-color: rgba(34, 34, 34, 0.4509803922);
+}
+
+.tab-day-active h3, .tab-day-active .h3 {
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.tab-day-active h5, .tab-day-active .h5 {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.5;
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+.tab-day h3, .tab-day .h3 {
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  opacity: 0.5;
+}
+
+.tab-day h5, .tab-day .h5 {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.200000003;
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+#eventSchedule .border-whiteFE {
+  border-radius: 24px;
+  margin-top: 40px;
+}
+
+#eventSchedule .schedule-title {
+  font-size: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  opacity: 100;
+}
+
+#eventSchedule .title-container {
+  background-color: rgba(34, 34, 34, 0.1725490196);
+  border-radius: 24px 24px 0 0;
+}
+
+#eventSchedule .row-adj {
+  padding: 40px;
+}
+
+#eventSchedule .event-desc {
+  font-size: 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
