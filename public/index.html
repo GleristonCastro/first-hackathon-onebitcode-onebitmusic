@@ -62,32 +62,158 @@
     <section id="aboutMusic" class="container-xl">
       <div class="row p-0 m-0">
         <div class="col-6">
-          <img src="./assets/images/party1.png" alt="Sobre a gente Imagem 1">
-          <img src="./assets/images/party2.png" alt="Sobre a gente Imagem 2">
+          <div class="position-relative">
+            <img src="./assets/images/party1.png" class="about-img" alt="Sobre a gente Imagem 1">
+            <img src="./assets/images/party2.png" class="about-img position-absolute bottom-0 end-0" alt="Sobre a gente Imagem 2">
+          </div>
         </div>
-        <div class="col-6">
-          <h3>Sobre a gente</h3>
+        <div class="col-6 d-flex align-items-center">
+          <div>
+            <h2>Sobre a gente</h2>
           <div>Na onebitmusic, estamos redefinindo a maneira como experimentamos e nos envolvemos com a música, utilizando tecnologia de realidade virtual (VR) para criar shows e performances que transcendem os limites físicos e levam você a novos patamares de entretenimento musical.</div>
-          <a href="#" class="btn btn-whiteFE">Ler mais <img src="./assets/images/Arrow.svg" alt=""></a>
+          <a href="#" class="btn btn-whiteFE mt-5">Ler mais <img src="./assets/images/Arrow.svg" alt=""></a>
+          </div>
         </div>
       </div>
     </section>
     <section id="singers" class="container-xl">
-      <div class="col-4">
-        <h3>Artistas</h3>
-        <div>No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas talentosos. Nossa seleção musical abrange diferentes gêneros e estilos, garantindo uma experiência musical diversificada e emocionante. De DJs renomados a bandas cativantes, cada artista traz sua paixão e habilidade para criar performances envolventes. Prepare-se para se surpreender com músicas cativantes, ritmos vibrantes e momentos emocionantes durante todo o evento. Os artistas da OneBitMusic estão prontos para levar você a uma jornada musical única e inesquecível.</div>
-      </div>
-      <div class="col-8">
-        <div class="row me-0 ms-0">
-          <img src="./assets/images/artist_1.png" alt="Artist One">
-          <img src="./assets/images/artist_2.png" alt="Artist Two">
-          <img src="./assets/images/artist_3.png" alt="Artist Three">
-          <img src="./assets/images/artist_4.png" alt="Artist Fout">
+      <div class="row p-0 m-0">
+        <div class="col-5 d-flex align-items-center">
+          <div>
+            <h2>Artistas</h2>
+          <div>No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas talentosos. Nossa seleção musical abrange diferentes gêneros e estilos, garantindo uma experiência musical diversificada e emocionante. De DJs renomados a bandas cativantes, cada artista traz sua paixão e habilidade para criar performances envolventes. Prepare-se para se surpreender com músicas cativantes, ritmos vibrantes e momentos emocionantes durante todo o evento. Os artistas da OneBitMusic estão prontos para levar você a uma jornada musical única e inesquecível.</div>
+          <a href="#" class="btn btn-whiteFE mt-5">Veja a lista completa <img src="./assets/images/Arrow.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row justify-content-end align-items-center gap-4 m-0">
+            <div class="card-artist"></div>
+            <div class="card-artist"></div>
+            <div class="card-artist"></div>
+            <div class="card-artist"></div>
+          </div>
         </div>
       </div>
     </section>
-    <section></section>
-    <section></section>
+    <section id="eventSchedule" class="container-xl">
+      <h2>Nossa programação</h2>
+
+      <div class="navtabs row g-3 m-0 p-0 gap-4">
+        <div class="col tab-day-active">
+          <h3 class="text-generalDark">Dia 01</h3>
+          <h5 class="text-generalDark">23 Setembro</h5>
+        </div>
+        <div class="col tab-day">
+          <h3 class="text-whiteFE">Dia 02</h3>
+          <h5 class="text-generalDark">24 Setembro</h5>
+        </div>
+        <div class="col tab-day">
+          <h3 class="text-whiteFE">Dia 03</h3>
+          <h5 class="text-generalDark">25 Setembro</h5>
+        </div>
+      </div>
+      
+      <div class="container gap-4 border border-whiteFE p-0">
+        <div class="row row-cols-4 m-0 row-adj title-container">
+          <div class="col-3 schedule-title">Hora</div>
+          <div class="col-4 schedule-title">Conteúdo</div>
+          <div class="col-3 schedule-title">Artistas</div>
+          <div class="col-2 schedule-title"></div>
+        </div>
+        <div class="row row-cols-4 m-0 row-adj border-bottom">
+          <div class="col-3">11:00 AM to 12:00 PM</div>
+          <div class="col-4 event-desc">Desfrute de uma performance emocionante com Yui Ronald, um artista solo que encanta o público com sua voz cativante e letras inspiradoras. Prepare-se para uma noite de músicas envolventes e momentos emocionantes.</div>
+          <div class="col-3 d-flex flex-column gap-3">
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar1.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
+            </div>
+          </div>
+          <div class="col-2 event-desc d-flex align-items-center justify-content-end">
+            <div>
+              Previa <img src="./assets/images/Play_small.svg" alt="Previa">
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 m-0 row-adj border-bottom">
+          <div class="col-3">12:00 PM to 03:00 PM</div>
+          <div class="col-4 event-desc">O trio que vai levar você a uma jornada musical com suas harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado que abrange diversos estilos musicais e emocione seus sentidos.</div>
+          <div class="col-3 d-flex flex-column gap-3">
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar2.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Bob John</strong><br>Booth: 3G12</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar3.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar4.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Emma Satoshi</strong><br>Booth: 2A35</div>
+            </div>
+          </div>
+          <div class="col-2 text-generalRed event-desc  d-flex align-items-center justify-content-end">
+            <div>
+              AO VIVO <img src="./assets/images/Live_Camera.svg" alt="Ao vivo">
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 m-0 row-adj">
+          <div class="col-3">03:00 PM to 04:00 PM</div>
+          <div class="col-4 event-desc">A dupla que vai conquistar seu coração com sua música cativante e performances cheias de energia. Com sua sintonia perfeita e talento extraordinário, eles criarão um ambiente envolvente e contagiarão o público com seu estilo musical único.</div>
+          <div class="col-3 d-flex flex-column gap-3">
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar5.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Sasha Jackson</strong><br>Booth: 2F18</div>
+            </div>
+            <div class="row">
+              <div class="col-3"><img src="./assets/images/avatar6.png" alt="Avatar 1"></div>
+              <div class="col-9"><strong>Diana Brock</strong><br>Booth: 2F24</div>
+            </div>
+          </div>
+          <div class="col-2 event-desc d-flex align-items-center justify-content-end">
+            <div>
+              Em breve <img src="./assets/images/Clock.svg" alt="Em Breve">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="pricing" class="container-xl">
+      <h2 class="text-center">Escolha o  tipo de ingresso</h2>
+      
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5">
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
   <footer></footer>
   <script src="./assets/js/bootstrap.bundle.js"></script>
