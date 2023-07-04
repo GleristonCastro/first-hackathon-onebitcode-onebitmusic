@@ -12876,4 +12876,12 @@ textarea.form-control-lg {
   padding-bottom: 130px;
 }
 
+#navbar {
+  transition: background-color 0.5s ease;
+}
+
+.scrolled {
+  background-color: rgba(5, 6, 8, 0.9333333333);
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
