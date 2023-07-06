@@ -13099,8 +13099,98 @@ h2, .h2 {
 
 #pricing,
 #sponsors,
-#testimonials {
+#testimonials,
+#gallery {
   margin-bottom: 160px;
+}
+
+#gallery {
+  background-image: linear-gradient(180deg, rgba(252, 82, 82, 0.05) 0%, rgba(252, 82, 82, 0) 100%);
+  padding-top: 130px;
+}
+
+#gallery .insta-back {
+  opacity: 0.1000000015;
+  margin-left: 550px;
+  position: absolute;
+  margin-top: -160px;
+}
+
+#gallery .gallery-card-title, #gallery .gallery-card-text {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#gallery .gallery-card-text {
+  opacity: 0.5;
+}
+
+#gallery .gallery-card-title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#gallery .card-img-cover {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+
+#gallery .adjust-height {
+  margin-top: 75px;
+}
+
+#gallery .carousel-item .col {
+  max-width: 350px;
+}
+
+#gallery .gallery-icon-space {
+  margin-top: 24px;
+  opacity: 1;
+}
+
+#gallery .gallery-icon-space h5, #gallery .gallery-icon-space .h5 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+#gallery .gallery-icon-space :nth-child(2) {
+  margin-right: 40px;
+}
+
+#gallery img {
+  margin-right: 8px;
+}
+
+.carousel-item .col:nth-child(1), .carousel-item .col:nth-last-child(1) {
+  opacity: 0.3000000119;
+}
+
+.gallery1 {
+  background-image: url(/public/assets/images/gallery_01.png);
+}
+
+.gallery2 {
+  background-image: url(/public/assets/images/gallery_02.png);
+}
+
+.gallery3 {
+  background-image: url(/public/assets/images/gallery_03.png);
+}
+
+.gallery4 {
+  background-image: url(/public/assets/images/gallery_04.png);
+}
+
+.gallery5 {
+  background-image: url(/public/assets/images/gallery_05.png);
 }
 
 .carousel-container {
@@ -13227,6 +13317,138 @@ h2, .h2 {
 .carousel .block-quote {
   height: 232px;
   background-color: rgba(34, 34, 34, 0.1725490196);
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+footer {
+  background: rgb(90, 90, 90);
+  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgb(34, 34, 34) 50%, rgb(90, 90, 90) 50%, rgb(90, 90, 90) 100%);
+}
+
+footer .contact-row {
+  height: 662px;
+}
+
+footer h2, footer .h2 {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 128px;
+}
+
+footer .gap-40 {
+  gap: 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer .gap-30 {
+  gap: 30px;
+}
+
+footer .gap-40 img {
+  margin-right: 8px;
+}
+
+footer .contact-col1 {
+  background-image: url(/public/assets/images/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 120px;
+  padding-left: 80px;
+}
+
+footer .form-contact {
+  padding-left: 130px;
+  width: 100%;
+}
+
+footer .form-contact h3, footer .form-contact .h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+
+footer .form-contact label {
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  opacity: 0.6999999881;
+}
+
+footer .form-contact input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+footer .space-30xy {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .form-contact input:focus {
+  outline: none;
+  color: #fefefe;
+}
+
+footer .form-contact a {
+  border-radius: 8px;
+  padding: 18px 34px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .footer-end {
+  height: 91px;
+}
+
+footer .copy-text {
+  margin-left: 94px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
