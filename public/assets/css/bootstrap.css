@@ -13263,6 +13263,43 @@ h2, .h2 {
   margin-right: 8px;
 }
 
+#gallery .bt-slider {
+  height: 56px;
+  width: 56px;
+}
+
+#gallery .bt-slider {
+  background-color: #fefefe;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  display: flex;
+  padding: 11.2px;
+}
+
+.inverter {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#gallery .carousel-control-prev, .carousel-control-next {
+  opacity: 1;
+  height: 56px;
+  width: auto;
+}
+
+#gallery .carousel-control-prev {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+#gallery .carousel-control-next {
+  margin-top: 150px;
+  margin-right: 150px;
+}
+
 .carousel-item .col:nth-child(1), .carousel-item .col:nth-last-child(1) {
   opacity: 0.3000000119;
 }
