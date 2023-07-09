@@ -13585,6 +13585,34 @@ footer .copy-text {
   margin-left: 94px;
 }
 
+.scroll {
+  overflow-y: scroll;
+  display: inline-block;
+}
+
+.scroll--simple::-webkit-scrollbar {
+  width: 15px;
+  height: 6px;
+}
+
+.scroll--simple::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.scroll--simple::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.scroll--simple::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.scroll--simple::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 @media (max-width: 2560px) {
   .carousel article {
     width: 827px;
@@ -13658,6 +13686,12 @@ footer .copy-text {
   }
   footer .copy-text {
     margin-left: 34px;
+  }
+}
+@media (max-width: 991px) {
+  #navbar {
+    background-color: #222222;
+    align-content: flex-start;
   }
 }
 @media (max-width: 768px) {
@@ -13758,6 +13792,207 @@ footer .copy-text {
     margin-bottom: 45px;
   }
   footer .copy-text {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  footer .footer-end {
+    height: 170px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  footer {
+    background: none;
+  }
+  #navbar .navbar-nav {
+    gap: 0 !important;
+  }
+  #eventSchedule .row-adj {
+    padding: 30px 10px;
+  }
+  .navtabs {
+    text-align: center;
+  }
+  .aboutMusic-content {
+    margin-top: 100px;
+  }
+  .singers-content {
+    margin-bottom: 50px;
+  }
+  .artist-block {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .card-artist {
+    border-radius: 12px;
+  }
+  #gallery .carousel-control-prev {
+    margin-left: -10px;
+  }
+  #gallery .carousel-control-next {
+    margin-right: -10px;
+  }
+  .card-artist:nth-of-type(1), .card-artist:nth-of-type(4) {
+    width: 200px;
+    height: 113.51px;
+  }
+  .card-artist:nth-of-type(2), .card-artist:nth-of-type(3) {
+    width: 135px;
+    height: 192.86px;
+  }
+}
+@media (max-width: 320px) {
+  .btn-whiteFE, .btn-generalRed {
+    padding: 11px 25px;
+  }
+  .hero .title {
+    font-size: 32px;
+  }
+  .hero .subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .hero .counter {
+    font-size: 30px;
+  }
+  .hero .flex-smx-column {
+    flex-direction: column;
+  }
+  #aboutMusic .about-img, #singers .about-img {
+    border-radius: 24px;
+    width: 290px;
+    height: 302.61px;
+  }
+  .sponsors-img {
+    max-width: 150px;
+  }
+  .carousel article {
+    width: 310px;
+  }
+  .carousel .block-quote {
+    height: 450px;
+  }
+  #pricing .row .col-lg-4 .card {
+    min-height: 487px;
+  }
+  #gallery .insta-back {
+    margin-left: 2vw;
+  }
+  footer .form-contact {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  footer .contact-row {
+    height: 556px;
+  }
+  footer .contact-col1 {
+    padding-top: 90px;
+  }
+  footer h2, footer .h2 {
+    margin-bottom: 45px;
+  }
+  footer .copy-text {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  footer .footer-end {
+    height: 170px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  footer {
+    background: none;
+  }
+  #navbar {
+    background-color: #222222;
+    align-content: flex-start;
+  }
+  #navbar .navbar-nav {
+    gap: 0 !important;
+  }
+  #eventSchedule .row-adj {
+    padding: 30px 10px;
+  }
+  .navtabs {
+    text-align: center;
+  }
+  .aboutMusic-content {
+    margin-top: 100px;
+  }
+  .singers-content {
+    margin-bottom: 50px;
+  }
+  .artist-block {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .card-artist {
+    border-radius: 12px;
+  }
+  #gallery .carousel-control-prev {
+    margin-left: -10px;
+  }
+  #gallery .carousel-control-next {
+    margin-right: -10px;
+  }
+  .card-artist:nth-of-type(1), .card-artist:nth-of-type(4) {
+    width: 200px;
+    height: 113.51px;
+  }
+  .card-artist:nth-of-type(2), .card-artist:nth-of-type(3) {
+    width: 135px;
+    height: 192.86px;
+  }
+}
+@media (max-width: 375px) {
+  .btn-whiteFE, .btn-generalRed {
+    padding: 8px 20px;
+  }
+  .hero .title {
+    font-size: 32px;
+  }
+  .hero .subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .hero .counter {
+    font-size: 30px;
+  }
+  .hero .flex-smx-column {
+    flex-direction: column;
+  }
+  #aboutMusic .about-img, #singers .about-img {
+    top: 30px;
+    left: 30px;
+  }
+  .sponsors-img {
+    max-width: 120px;
+  }
+  .carousel article {
+    width: 310px;
+  }
+  .carousel .block-quote {
+    height: 450px;
+  }
+  #pricing .row .col-lg-4 .card {
+    min-height: 487px;
+  }
+  #gallery .insta-back {
+    max-width: 300px;
+  }
+  footer .form-contact {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  footer .contact-row {
+    height: 556px;
+  }
+  footer .contact-col1 {
+    padding-top: 90px;
+  }
+  footer h2, footer .h2 {
+    margin-bottom: 45px;
+  }
+  footer .copy-text {
     margin-left: 34px;
   }
   footer .footer-end {
@@ -13765,6 +14000,40 @@ footer .copy-text {
   }
   footer {
     background: none;
+  }
+  #navbar {
+    background-color: #222222;
+    align-content: flex-start;
+  }
+  #navbar .navbar-nav {
+    gap: 0 !important;
+  }
+  #eventSchedule .row-adj {
+    padding: 30px 10px;
+  }
+  .navtabs {
+    text-align: center;
+  }
+  .aboutMusic-content {
+    margin-top: 100px;
+  }
+  .singers-content {
+    margin-bottom: 50px;
+  }
+  .artist-block {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .card-artist {
+    border-radius: 12px;
+  }
+  .card-artist:nth-of-type(1), .card-artist:nth-of-type(4) {
+    width: 200px;
+    height: 113.51px;
+  }
+  .card-artist:nth-of-type(2), .card-artist:nth-of-type(3) {
+    width: 135px;
+    height: 192.86px;
   }
 }
 

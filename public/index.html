@@ -14,7 +14,7 @@
   <title>OneBitMusic</title>
 </head>
 
-<body>
+<body class="scroll--simple">
   <header>
 
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top text-whiteFE pt-3 pb-3">
@@ -76,7 +76,7 @@
               alt="Sobre a gente Imagem 2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
           </div>
         </div>
-        <div class="col-md-12 col-lg-5 col-xl-6 col-xxl-6 order-md-0 d-flex align-items-center pb-md-5">
+        <div class="col-md-12 col-lg-5 col-xl-6 col-xxl-6 order-md-0 d-flex align-items-center pb-md-5 aboutMusic-content">
           <div>
             <h2 data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Sobre a gente</h2>
             <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Na onebitmusic, estamos redefinindo a maneira como experimentamos e nos envolvemos com a música,
@@ -90,9 +90,9 @@
     <section id="singers" class="container-xl">
       <div class="row p-0 m-0">
         <div class="col-md-12 col-lg-4 col-12 d-flex align-items-lg-start align-items-center">
-          <div>
+          <div class="singers-content">
             <h2  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Artistas</h2>
-            <div  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas
+            <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas
               talentosos. Nossa seleção musical abrange diferentes gêneros e estilos, garantindo uma experiência musical
               diversificada e emocionante. De DJs renomados a bandas cativantes, cada artista traz sua paixão e
               habilidade para criar performances envolventes. Prepare-se para se surpreender com músicas cativantes,
@@ -138,69 +138,70 @@
           <div class="col-2 schedule-title"></div>
         </div>
         <div class="row row-cols-4 m-0 row-adj border-bottom"  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-          <div class="col-3">11:00 AM to 12:00 PM</div>
-          <div class="col-4 event-desc">Desfrute de uma performance emocionante com Yui Ronald, um artista solo que
+          <div class="order-2 order-sm-0 order-md-0 order-lg-0 order-xl-0 col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">11:00 AM to 12:00 PM</div>
+          <div class="order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 event-desc">Desfrute de uma performance emocionante com Yui Ronald, um artista solo que
             encanta o público com sua voz cativante e letras inspiradoras. Prepare-se para uma noite de músicas
             envolventes e momentos emocionantes.</div>
-          <div class="col-3 d-flex flex-column gap-3">
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar1.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
+          <div class="order-0 order-sm-2 order-md-2 order-lg-2 order-xl-2 col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex flex-row flex-sm-column flex-md-column flex-lg-column flex-xl-column gap-3">
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar1.png" alt="Avatar 1"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
             </div>
           </div>
-          <div class="col-2 event-desc d-flex align-items-center justify-content-end">
+          <div class="order-3 order-sm-3 order-md-3 order-lg-3 order-xl-3 col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2 event-desc d-flex align-items-center justify-content-end">
             <div>
               Previa <img src="./assets/images/Play_small.svg" alt="Previa">
             </div>
           </div>
         </div>
+
         <div class="row row-cols-4 m-0 row-adj border-bottom"  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-          <div class="col-3">12:00 PM to 03:00 PM</div>
-          <div class="col-4 event-desc">O trio que vai levar você a uma jornada musical com suas harmonias vocais
+          <div class="order-2 order-sm-0 order-md-0 order-lg-0 order-xl-0 col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">12:00 PM to 03:00 PM</div>
+          <div class="order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 event-desc">O trio que vai levar você a uma jornada musical com suas harmonias vocais
             encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado
             que abrange diversos estilos musicais e emocione seus sentidos.</div>
-          <div class="col-3 d-flex flex-column gap-3">
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar2.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Bob John</strong><br>Booth: 3G12</div>
+          <div class="order-0 order-sm-2 order-md-2 order-lg-2 order-xl-2 col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex flex-row flex-sm-column flex-md-column flex-lg-column flex-xl-column gap-3">
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar2.png" alt="Avatar 2"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Bob John</strong><br>Booth: 3G12</div>
             </div>
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar3.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar1.png" alt="Avatar 1"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Yui Ronald</strong><br>Booth: 2F12</div>
             </div>
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar4.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Emma Satoshi</strong><br>Booth: 2A35</div>
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar4.png" alt="Avatar 4"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Emma Satoshi</strong><br>Booth: 2A35</div>
             </div>
           </div>
-          <div class="col-2 text-generalRed event-desc  d-flex align-items-center justify-content-end">
+          <div class="order-3 order-sm-3 order-md-3 order-lg-3 order-xl-3 col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2 event-desc d-flex align-items-center justify-content-end text-generalRed">
             <div>
               AO VIVO <img src="./assets/images/Live_Camera.svg" alt="Ao vivo">
             </div>
           </div>
         </div>
+
         <div class="row row-cols-4 m-0 row-adj"  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-          <div class="col-3">03:00 PM to 04:00 PM</div>
-          <div class="col-4 event-desc">A dupla que vai conquistar seu coração com sua música cativante e performances
-            cheias de energia. Com sua sintonia perfeita e talento extraordinário, eles criarão um ambiente envolvente e
-            contagiarão o público com seu estilo musical único.</div>
-          <div class="col-3 d-flex flex-column gap-3">
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar5.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Sasha Jackson</strong><br>Booth: 2F18</div>
+          <div class="order-2 order-sm-0 order-md-0 order-lg-0 order-xl-0 col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">12:00 PM to 03:00 PM</div>
+          <div class="order-1 order-sm-1 order-md-1 order-lg-1 order-xl-1 col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 event-desc">O trio que vai levar você a uma jornada musical com suas harmonias vocais
+            encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado
+            que abrange diversos estilos musicais e emocione seus sentidos.</div>
+          <div class="order-0 order-sm-2 order-md-2 order-lg-2 order-xl-2 col-8 col-sm-3 col-md-3 col-lg-3 col-xl-3 d-flex flex-row flex-sm-column flex-md-column flex-lg-column flex-xl-column gap-3">
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar5.png" alt="Avatar 5"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Sasha Jackson</strong><br>Booth: 2F18</div>
             </div>
-            <div class="row">
-              <div class="col-3"><img src="./assets/images/avatar6.png" alt="Avatar 1"></div>
-              <div class="col-9"><strong>Diana Brock</strong><br>Booth: 2F24</div>
+            <div class="row artist-block">
+              <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3"><img src="./assets/images/avatar6.png" alt="Avatar 6"></div>
+              <div class="col col-sm-9 col-md-9 col-lg-9 col-xl-9"><strong>Diana Brock</strong><br>Booth: 2F24</div>
             </div>
           </div>
-          <div class="col-2 event-desc d-flex align-items-center justify-content-end">
+          <div class="order-3 order-sm-3 order-md-3 order-lg-3 order-xl-3 col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2 event-desc d-flex align-items-center justify-content-end">
             <div>
-              Em breve <img src="./assets/images/Clock.svg" alt="Em Breve">
+              Em breve <img src="./assets/images/Clock.svg" alt="Em breve">
             </div>
           </div>
         </div>
-      </div>
 
     </section>
     <section id="pricing" class="container-xl">
@@ -567,7 +568,7 @@
   <script>
     AOS.init();
   </script>
-  <!-- <script src="./assets/js/main.js"></script> -->
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
