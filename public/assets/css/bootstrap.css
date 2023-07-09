@@ -13760,6 +13760,12 @@ footer .copy-text {
   footer .copy-text {
     margin-left: 34px;
   }
+  footer .footer-end {
+    height: 150px;
+  }
+  footer {
+    background: none;
+  }
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
