@@ -12838,6 +12838,139 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
+.nav-item {
+  margin: 10px 20px;
+}
+
+.nav-item.dropdown.dropdown-mega {
+  position: static;
+}
+
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+  top: 91px;
+}
+
+.navbar-collapse ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+
+.navbar-collapse ul li {
+  padding: 6px 0;
+}
+
+.navbar-collapse ul li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.navbar-collapse ul li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #F64348;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.navbar-collapse ul li a:hover {
+  color: rgba(255, 255, 255, 0.5843137255);
+}
+
+.navbar-collapse ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .hamburger-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+  float: right;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(0deg);
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  pointer-events: none;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: #fff;
+  border-radius: 2px;
+  z-index: 1;
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+  left: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:first-child {
+  top: 10%;
+  transform-origin: 50% 50%;
+  transform: translate(0% -50%) !important;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger span:last-child {
+  left: 0px;
+  top: auto;
+  bottom: 10%;
+  transform-origin: 50% 50%;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span {
+  position: absolute;
+  margin: 0;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+  top: 45%;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+  left: 50%;
+  width: 0px;
+}
+
+.navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
 .hero {
   background-image: url(../images/bg_hero.jpg);
   min-height: 100vh;
@@ -12952,6 +13085,19 @@ body {
   line-height: 28px;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .hero .counter {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -12966,7 +13112,7 @@ body {
 }
 
 .btn-whiteFE,
-.btn-generalRed {
+.btn-generalRed, .btn-generalDark {
   border-radius: 8px;
   padding: 18px 34px;
   align-items: center;
@@ -12975,6 +13121,38 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.btn-generalRed {
+  color: #fefefe;
+  border: 1px solid #F64348;
+}
+
+.btn-generalRed:hover {
+  border: 1px solid #222;
+  color: #fefefe;
+  background-color: #222;
+}
+
+.btn-whiteFE:hover, .btn-generalDark:hover {
+  background-color: #F64348 !important;
+  color: #fefefe;
+  border-color: #F64348;
+  transition: 0.5s;
+}
+
+.fa-arrow-right {
+  font-size: 19px;
+  margin-left: 8px;
+  vertical-align: text-bottom;
+}
+
+#pricing .btn-whiteFE, #pricing .btn-generalDark {
+  border: 1px solid #222;
+}
+
+#pricing .btn-whiteFE:hover, #pricing .btn-generalDark:hover {
+  border: 1px solid #fefefe;
 }
 
 #aboutMusic,
@@ -13429,6 +13607,7 @@ h2, .h2 {
   border: 2px solid #fefefe;
   border-radius: 50%;
   margin-top: 1em;
+  cursor: pointer;
 }
 
 .carousel article .footer-quote {
@@ -13569,6 +13748,21 @@ footer .form-contact a {
 
 footer .footer-end {
   height: 91px;
+}
+
+footer .i-container {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: x-large;
+}
+
+footer .list-unstyled a svg path {
+  fill: #fefefe;
+}
+
+footer .list-unstyled li:hover a svg path {
+  fill: #F64348;
 }
 
 footer .copy-text {

@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>OneBitMusic</title>
 </head>
@@ -59,8 +60,8 @@
         <div class="d-flex gap-4 flex-smx-column align-items-center"  data-aos="fade-up" data-aos-duration="3000">
           <a href="#" class="btn btn-generalRed text-whiteFE">Começar</a>
           <div class="d-flex align-items-center gap-2">
-            <a class="play-btn" href="#" title="Play"></a>
-            <div class="hero-play-title">Assistir Vídeo</div>
+            <a class="play-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button" title="Play"></a>
+            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="text-whiteFE text-decoration-none"><div class="hero-play-title">Assistir Vídeo</div></a>
           </div>
         </div>
         <div id="countdown" class="counter"  data-aos="fade-up" data-aos-duration="3000">
@@ -68,6 +69,26 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
+      <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+        <div class="modal-content bg-generalDark">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/qDyfeRY9mAM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="aboutMusic" class="container-xl">
       <div class="row p-0 m-0">
         <div class="col-md-12 col-lg-7 col-xl-6 col-xxl-6 order-md-1 d-flex justify-content-md-center">
@@ -78,12 +99,13 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-5 col-xl-6 col-xxl-6 order-md-0 d-flex align-items-center pb-md-5 aboutMusic-content">
-          <div>
-            <h2 data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Sobre a gente</h2>
-            <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Na onebitmusic, estamos redefinindo a maneira como experimentamos e nos envolvemos com a música,
+          <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <h2>Sobre a gente</h2>
+            <div>Na onebitmusic, estamos redefinindo a maneira como experimentamos e nos envolvemos com a música,
               utilizando tecnologia de realidade virtual (VR) para criar shows e performances que transcendem os limites
               físicos e levam você a novos patamares de entretenimento musical.</div>
-            <a href="#" class="btn btn-whiteFE mt-5"  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Ler mais <img src="./assets/images/Arrow.svg" alt=""></a>
+            <a href="#" class="btn btn-whiteFE mt-5">Ler mais <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -91,16 +113,16 @@
     <section id="singers" class="container-xl">
       <div class="row p-0 m-0">
         <div class="col-md-12 col-lg-4 col-12 d-flex align-items-lg-start align-items-center">
-          <div class="singers-content">
-            <h2  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Artistas</h2>
-            <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas
+          <div class="singers-content" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <h2>Artistas</h2>
+            <div>No evento da OneBitMusic, você terá a oportunidade de desfrutar de uma incrível variedade de artistas
               talentosos. Nossa seleção musical abrange diferentes gêneros e estilos, garantindo uma experiência musical
               diversificada e emocionante. De DJs renomados a bandas cativantes, cada artista traz sua paixão e
               habilidade para criar performances envolventes. Prepare-se para se surpreender com músicas cativantes,
               ritmos vibrantes e momentos emocionantes durante todo o evento. Os artistas da OneBitMusic estão prontos
               para levar você a uma jornada musical única e inesquecível.</div>
-            <a href="#" class="btn btn-whiteFE mt-5"  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Veja a lista completa <img src="./assets/images/Arrow.svg"
-                alt=""></a>
+            <a href="#" class="btn btn-whiteFE mt-5">Veja a lista completa <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
         <div class="col-lg-8 col-12 col-md-12">
@@ -221,7 +243,7 @@
                 <li>Preço acessível</li>
               </ul>
               </p>
-              <a href="#" class="btn btn-whiteFE border border-generalDark">Saber mais</a>
+              <a href="#" class="btn btn-whiteFE">Saber mais</a>
             </div>
           </div>
         </div>
@@ -237,7 +259,7 @@
                 <li>Possibilidade de interagir com os artistas</li>
               </ul>
               </p>
-              <a href="#" class="btn btn-whiteFE bg-generalDark  text-whiteFE border-generalDark">Saber mais</a>
+              <a href="#" class="btn btn-generalDark">Saber mais</a>
             </div>
           </div>
         </div>
@@ -253,13 +275,13 @@
                 <li>Experiência VIP</li>
               </ul>
               </p>
-              <a href="#" class="btn btn-whiteFE border border-generalRed text-generalRed">Saber mais</a>
+              <a href="#" class="btn btn-generalRed">Saber mais</a>
             </div>
           </div>
         </div>
 
     </section>
-    <section id="sponsors" class="container-xl text-center">
+    <section id="sponsors" class="container-xl text-center data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"">
       <h2  data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Nossos investidores</h2>
       <div class="row row-cols-xl-4 row-cols-lg-4 row-cols-md-3 row-cols-2 mt-5">
         <div class="col p-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
@@ -287,7 +309,7 @@
           <img src="./assets/images/sponsors/sponsors_8.png" class="sponsors-img" alt="Oracle">
         </div>
       </div>
-      <a href="" class="btn btn-whiteFE mt-5" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Se torne um investidor</a>
+      <a href="#" class="btn btn-whiteFE mt-5">Se torne um investidor</a>
     </section>
 
     <section id="testimonials" class="container-fluid">
@@ -495,12 +517,70 @@
           </div>
           <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-end align-items-center flex-wrap">
             <ul class="list-unstyled d-flex gap-30 m-0">
-              <li><a href="#" title="Facebook"><img src="./assets/images/Facebook_footer.svg" alt=""></a></li>
-              <li><a href="#" title="Twitter"><img src="./assets/images/Twitter_footer.svg" alt=""></a></li>
-              <li><a href="#" title="Instagram"><img src="./assets/images/Instagram_footer.svg" alt=""></a></li>
-              <li><a href="#" title="Linkedin"><img src="./assets/images/Linkedin_footer.svg" alt=""></a></li>
+              <li><a href="#" title="Facebook">
+                
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icons / Facebook" clip-path="url(#clip0_896_178)">
+                  <path id="Vector" d="M17.5 16.875H20.625L21.875 11.875H17.5V9.375C17.5 8.0875 17.5 6.875 20 6.875H21.875V2.675C21.4675 2.62125 19.9287 2.5 18.3037 2.5C14.91 2.5 12.5 4.57125 12.5 8.375V11.875H8.75V16.875H12.5V27.5H17.5V16.875Z"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_896_178">
+                  <rect width="30" height="30" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+
+              </a></li>
+              <li><a href="#" title="Twitter">
+                
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icons / Twitter" clip-path="url(#clip0_896_225)">
+                  <path id="Vector" d="M27.7024 7.07015C26.7481 7.49227 25.7361 7.76949 24.6999 7.89265C25.7921 7.23944 26.6095 6.21142 26.9999 5.00015C25.9749 5.61015 24.8511 6.03765 23.6799 6.2689C22.8931 5.42713 21.8503 4.86886 20.7136 4.68088C19.5768 4.49291 18.4098 4.68577 17.394 5.22947C16.3781 5.77317 15.5704 6.63726 15.0963 7.68739C14.6222 8.73753 14.5083 9.91488 14.7724 11.0364C12.6938 10.9322 10.6603 10.3921 8.80399 9.45098C6.94768 8.50991 5.31004 7.18896 3.99738 5.5739C3.53275 6.37197 3.28858 7.27919 3.28988 8.20265C3.28988 10.0152 4.21238 11.6164 5.61488 12.5539C4.78489 12.5278 3.97317 12.3036 3.24738 11.9002V11.9652C3.24763 13.1723 3.66534 14.3422 4.42969 15.2765C5.19404 16.2108 6.25798 16.852 7.44113 17.0914C6.67065 17.3002 5.86277 17.331 5.07863 17.1814C5.41222 18.2204 6.06239 19.1292 6.93812 19.7803C7.81385 20.4314 8.87129 20.7924 9.96238 20.8127C8.87798 21.6643 7.63635 22.2939 6.30848 22.6654C4.98061 23.0369 3.59254 23.143 2.22363 22.9777C4.61325 24.5144 7.395 25.3303 10.2361 25.3277C19.8524 25.3277 25.1111 17.3614 25.1111 10.4527C25.1111 10.2277 25.1049 10.0002 25.0949 9.77765C26.1185 9.03786 27.0019 8.12143 27.7036 7.0714L27.7024 7.07015Z"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_896_225">
+                  <rect width="30" height="30" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+
+              </a></li>
+
+              <li><a href="#" title="Linkedin">
+                
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icons / Linkedin" clip-path="url(#clip0_896_228)">
+                  <path id="Vector" d="M22.9187 22.9238H19.5875V17.7025C19.5875 16.4575 19.5625 14.855 17.85 14.855C16.1137 14.855 15.8487 16.21 15.8487 17.6112V22.9238H12.5162V12.1875H15.7162V13.65H15.76C16.2075 12.8075 17.295 11.9162 18.92 11.9162C22.295 11.9162 22.92 14.1387 22.92 17.03V22.9238H22.9187ZM8.75375 10.7187C8.49944 10.7191 8.24757 10.6692 8.01258 10.572C7.77758 10.4748 7.56408 10.3322 7.38432 10.1523C7.20456 9.97242 7.06207 9.75882 6.96501 9.52377C6.86796 9.28871 6.81826 9.03681 6.81875 8.7825C6.819 8.39979 6.93272 8.02575 7.14555 7.70768C7.35838 7.38961 7.66074 7.14179 8.01441 6.99557C8.36808 6.84934 8.75717 6.81127 9.13248 6.88618C9.50778 6.96108 9.85244 7.14559 10.1229 7.41638C10.3933 7.68717 10.5774 8.03208 10.6518 8.40748C10.7262 8.78288 10.6877 9.17192 10.541 9.5254C10.3943 9.87888 10.1461 10.1809 9.82774 10.3933C9.50939 10.6058 9.13521 10.719 8.7525 10.7187H8.75375ZM10.4237 22.9238H7.0825V12.1875H10.425V22.9238H10.4237ZM24.5875 3.75H5.41125C4.49125 3.75 3.75 4.475 3.75 5.37125V24.6287C3.75 25.525 4.4925 26.25 5.41 26.25H24.5825C25.5 26.25 26.25 25.525 26.25 24.6287V5.37125C26.25 4.475 25.5 3.75 24.5825 3.75H24.5863H24.5875Z"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_896_228">
+                  <rect width="30" height="30" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+
+              </a></li>
+
+              <li><a href="#" title="Instagram">
+                
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icons / Instagram" clip-path="url(#clip0_896_235)">
+                  <path id="Vector" d="M15 2.5C18.3963 2.5 18.82 2.5125 20.1525 2.575C21.4837 2.6375 22.39 2.84625 23.1875 3.15625C24.0125 3.47375 24.7075 3.90375 25.4025 4.5975C26.0381 5.22237 26.5299 5.97824 26.8438 6.8125C27.1525 7.60875 27.3625 8.51625 27.425 9.8475C27.4838 11.18 27.5 11.6037 27.5 15C27.5 18.3963 27.4875 18.82 27.425 20.1525C27.3625 21.4837 27.1525 22.39 26.8438 23.1875C26.5308 24.0222 26.0389 24.7783 25.4025 25.4025C24.7775 26.0379 24.0216 26.5297 23.1875 26.8438C22.3912 27.1525 21.4837 27.3625 20.1525 27.425C18.82 27.4838 18.3963 27.5 15 27.5C11.6037 27.5 11.18 27.4875 9.8475 27.425C8.51625 27.3625 7.61 27.1525 6.8125 26.8438C5.97791 26.5306 5.22191 26.0387 4.5975 25.4025C3.96176 24.7777 3.46991 24.0218 3.15625 23.1875C2.84625 22.3912 2.6375 21.4837 2.575 20.1525C2.51625 18.82 2.5 18.3963 2.5 15C2.5 11.6037 2.5125 11.18 2.575 9.8475C2.6375 8.515 2.84625 7.61 3.15625 6.8125C3.46905 5.97772 3.961 5.22165 4.5975 4.5975C5.22209 3.96154 5.97804 3.46966 6.8125 3.15625C7.61 2.84625 8.515 2.6375 9.8475 2.575C11.18 2.51625 11.6037 2.5 15 2.5ZM15 8.75C13.3424 8.75 11.7527 9.40848 10.5806 10.5806C9.40848 11.7527 8.75 13.3424 8.75 15C8.75 16.6576 9.40848 18.2473 10.5806 19.4194C11.7527 20.5915 13.3424 21.25 15 21.25C16.6576 21.25 18.2473 20.5915 19.4194 19.4194C20.5915 18.2473 21.25 16.6576 21.25 15C21.25 13.3424 20.5915 11.7527 19.4194 10.5806C18.2473 9.40848 16.6576 8.75 15 8.75V8.75ZM23.125 8.4375C23.125 8.0231 22.9604 7.62567 22.6674 7.33265C22.3743 7.03962 21.9769 6.875 21.5625 6.875C21.1481 6.875 20.7507 7.03962 20.4576 7.33265C20.1646 7.62567 20 8.0231 20 8.4375C20 8.8519 20.1646 9.24933 20.4576 9.54235C20.7507 9.83538 21.1481 10 21.5625 10C21.9769 10 22.3743 9.83538 22.6674 9.54235C22.9604 9.24933 23.125 8.8519 23.125 8.4375ZM15 11.25C15.9946 11.25 16.9484 11.6451 17.6517 12.3483C18.3549 13.0516 18.75 14.0054 18.75 15C18.75 15.9946 18.3549 16.9484 17.6517 17.6517C16.9484 18.3549 15.9946 18.75 15 18.75C14.0054 18.75 13.0516 18.3549 12.3483 17.6517C11.6451 16.9484 11.25 15.9946 11.25 15C11.25 14.0054 11.6451 13.0516 12.3483 12.3483C13.0516 11.6451 14.0054 11.25 15 11.25V11.25Z"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_896_235">
+                  <rect width="30" height="30" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+                </a>
+              </li>
+              
             </ul>
-            
             <span class="copy-text">© onebitcode.com, 2023</span>
           </div>
         </div>
