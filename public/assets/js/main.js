@@ -1,4 +1,4 @@
-const targetDate = new Date('2023-07-13T00:00:00Z');
+const targetDate = new Date('2023-07-17T00:00:00Z');
 
 function formatRemainingTime(remainingTime) {
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
